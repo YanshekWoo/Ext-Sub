@@ -1,6 +1,6 @@
 #!/bin/bash
 
-model_name_or_path=
+model_name_or_path=huggyllama/llama-7b
 data_path=
 output_dir=
 
