@@ -49,6 +49,19 @@ python ext_sub.py \
 ```
 
 
+### Load Model
+```
+model_name_or_path = ""
+
+config = PeftConfig.from_pretrained(model_name_or_path)
+model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path, torch_dtype=torch.float16, device_map="auto")
+model = PeftModel.from_pretrained(model, model_name_or_path)
+model = model.cuda()
+
+tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path, use_fast=False)
+```
+
+
 
 ## Cite
 
