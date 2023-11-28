@@ -62,8 +62,10 @@ tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path, use_fa
 ```
 
 ### Download
-We make available our trained LoRA checkpoints in [Google Drive](https://drive.google.com/drive/folders/13XhqHvLiTfwnrUZdSrQyGPZPh4iYXd-3?usp=sharing).
+We have made our trained LoRA checkpoints available through [Google Drive](https://drive.google.com/drive/folders/13XhqHvLiTfwnrUZdSrQyGPZPh4iYXd-3?usp=sharing).
 
+The base model can be obtained from the HuggingFace model hub: [huggyllama/llama-7b](https://huggingface.co/huggyllama/llama-7b) and [huggyllama/llama-13b](https://huggingface.co/huggyllama/llama-13b).
+Please remember to modify the `base_model_name_or_path` in the `adapter_config.json` file to the local path on your system.
 
 ## Cite
 
