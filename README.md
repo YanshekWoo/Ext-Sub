@@ -67,7 +67,7 @@ We have made our trained LoRA checkpoints available through [Google Drive](https
 The base model can be obtained from the HuggingFace model hub: [huggyllama/llama-7b](https://huggingface.co/huggyllama/llama-7b) and [huggyllama/llama-13b](https://huggingface.co/huggyllama/llama-13b).
 Please remember to modify the `base_model_name_or_path` in the `adapter_config.json` file to the local path on your system.
 
-## Cite
+## :link: Cite
 
 ```
 @article{hu2023separate,
@@ -80,5 +80,5 @@ Please remember to modify the `base_model_name_or_path` in the `adapter_config.j
 
 
 
-## License
+## :scroll: License
 This repository respects to Apache license 2.0.
