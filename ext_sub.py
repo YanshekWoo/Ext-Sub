@@ -283,7 +283,7 @@ if __name__ == "__main__":
     parser.add_argument("--input_path_1", type=str, default="")
     parser.add_argument("--input_path_2", type=str, default="")
     parser.add_argument("--alpha", type=float, default=1.0)
-    parser.add_argument("--method", type=str, default="ext-sub", choices=["subtraction", "addition", "projection"])
+    parser.add_argument("--method", type=str, default="ext-sub", choices=["subtraction", "addition", "ext-sub"])
     parser.add_argument("--output_path", type=str, default="")
 
     args = parser.parse_args()
@@ -299,4 +299,4 @@ if __name__ == "__main__":
         weigth_extraction_before_subtraction(args.input_path_1, args.input_path_2, args.alpha, args.output_path)
     else:
         raise NotImplementedError
-    print("Done!")
+    print("Processing Done.")
