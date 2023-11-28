@@ -20,7 +20,7 @@ Code for the paper ["Separate the Wheat from the Chaff: Model Deficiency Unlearn
 
 ## :rotating_light: Usage
 
-### Environment
+### :rainbow: Environment
 
 ```
 conda create -n EXT-SUB python=3.10
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 
-### Train
+### :fire: Train
 Run the training Bash script with custom parameters: `model_name_or_path`, `data_path`, `output_dir`
 ```
 cd training
@@ -38,7 +38,7 @@ bash train_peft.sh
 ⚠️ tips: The training code from [Alpaca](https://github.com/tatsu-lab/stanford_alpaca) was leveraged in order to resize the embedding of models, thereby incorporating a pad token. When saving the tokenizer after training, it now includes the pad token, which is not present in the original model (as only the PEMs were saved). To effectively utilize the pad token during testing, it is advisable to either resize the embedding once more or substitute the pad token with an existing token.
 
 
-### PEMs Operation
+### :hammer: PEMs Operation
 ```
 python ext_sub.py \
   --input_path_1  Your/Expert/PEMs/Path \
@@ -49,7 +49,7 @@ python ext_sub.py \
 ```
 
 
-### Load Model
+### :rocket: Load Model
 ```
 model_name_or_path = ""
 
@@ -61,7 +61,7 @@ model = model.cuda()
 tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path, use_fast=False)
 ```
 
-### Download
+### :file_folder: Download
 We have made our trained LoRA checkpoints available through [Google Drive](https://drive.google.com/drive/folders/13XhqHvLiTfwnrUZdSrQyGPZPh4iYXd-3?usp=sharing).
 
 The base model can be obtained from the HuggingFace model hub: [huggyllama/llama-7b](https://huggingface.co/huggyllama/llama-7b) and [huggyllama/llama-13b](https://huggingface.co/huggyllama/llama-13b).
