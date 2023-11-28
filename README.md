@@ -18,7 +18,7 @@ Code for the paper ["Separate the Wheat from the Chaff: Model Deficiency Unlearn
 
 
 
-## :rotating_light: Usage
+## :computer: Usage
 
 ### :rainbow: Environment
 
