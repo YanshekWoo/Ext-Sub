@@ -61,6 +61,8 @@ model = model.cuda()
 tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path, use_fast=False)
 ```
 
+### Download
+We make available our trained LoRA checkpoints in [Google Drive](https://drive.google.com/drive/folders/13XhqHvLiTfwnrUZdSrQyGPZPh4iYXd-3?usp=sharing).
 
 
 ## Cite
